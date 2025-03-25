@@ -35,12 +35,12 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 600)) # Add time in seconds
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = bool(os.environ.get("IS_VERIFY", True))
 TUTORIAL = os.environ.get("TUTORIAL", "https://t.me/shareus_open_tutorial/12")
 
 # Auto delete time in seconds. else 0 for disable
-AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "0"))
+AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", ""))
 AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG",  "⚠️ Important:\n\nAll Messages will be deleted after {time}. To avoid copyright 👍") #"This file will be automatically deleted in {time}. Please ensure you have saved any necessary content before this time.")
 AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted. Thank you for using our service. ✅")
 
@@ -68,7 +68,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ᴊ�
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>» ʙʏ @TGBotsCode</b>")
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = bool(os.environ.get("DISABLE_CHANNEL_BUTTON", True))
