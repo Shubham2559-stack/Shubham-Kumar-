@@ -45,7 +45,7 @@ AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG",  "⚠️ Important:\n\nAll M
 AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted. Thank you for using our service. ✅")
 
 #force sub channel id, if you want enable force sub else 0 for disable
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002665468001"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 
